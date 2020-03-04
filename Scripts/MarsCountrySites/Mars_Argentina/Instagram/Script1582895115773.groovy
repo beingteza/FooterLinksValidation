@@ -15,33 +15,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('')
-WebUI.maximizeWindow()
-WebUI.navigateToUrl('https://arg.mars.com/')
-WebUI.delay(1)
-WebUI.scrollToPosition(9999999, 9999999)
-WebUI.click(findTestObject('Object Repository/MarsCountrySites/Mars_Argentina/Facebook'))
-WebUI.delay(2)
-WebUI.switchToWindowIndex(1)
-String URL = WebUI.getUrl()
-WebUI.verifyMatch(URL, 'https://www.facebook.com/Mars', false)
-
-
 
 WebUI.openBrowser('')
-WebUI.maximizeWindow()
-WebUI.navigateToUrl('https://arg.mars.com/')
-WebUI.delay(1)
-WebUI.scrollToPosition(9999999, 9999999)
-WebUI.click(findTestObject('Object Repository/MarsCountrySites/Mars_Argentina/LinkedIn'))
-WebUI.delay(2)
-WebUI.switchToWindowIndex(1)
-String URL = WebUI.getUrl()
-WebUI.verifyMatch(URL, 'https://www.linkedin.com/company/mars', false)
-
-
-
-
 WebUI.maximizeWindow()
 WebUI.navigateToUrl('https://arg.mars.com/')
 WebUI.delay(1)
@@ -51,31 +26,4 @@ WebUI.delay(2)
 WebUI.switchToWindowIndex(1)
 String URL = WebUI.getUrl()
 WebUI.verifyMatch(URL, 'https://www.instagram.com/marsglobal/', false)
-WebUI.closeBrowser()
-
-
-
-
-WebUI.openBrowser('')
-WebUI.maximizeWindow()
-WebUI.navigateToUrl('https://arg.mars.com/')
-WebUI.delay(1)
-WebUI.scrollToPosition(9999999, 9999999)
-WebUI.click(findTestObject('Object Repository/MarsCountrySites/Mars_Argentina/Youtube'))
-WebUI.delay(2)
-WebUI.switchToWindowIndex(1)
-String URL = WebUI.getUrl()
-WebUI.verifyMatch(URL, 'https://www.youtube.com/user/Mars', false)
-WebUI.closeBrowser()
-
-WebUI.openBrowser('')
-WebUI.maximizeWindow()
-WebUI.navigateToUrl('https://arg.mars.com/')
-WebUI.delay(1)
-WebUI.scrollToPosition(9999999, 9999999)
-WebUI.click(findTestObject('Object Repository/MarsCountrySites/Mars_Argentina/Twitter'))
-WebUI.delay(2)
-WebUI.switchToWindowIndex(1)
-String URL = WebUI.getUrl()
-WebUI.verifyMatch(URL, 'https://twitter.com/Marsglobal', false)
 WebUI.closeBrowser()
